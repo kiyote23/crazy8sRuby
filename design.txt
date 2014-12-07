@@ -1,0 +1,42 @@
+Crazy 8s in Ruby
+
+Basic Play
+
+Eight cards are dealt to each player. The remaining cards are placed facedown on the table. The top card is then turned face up to start the game.
+
+Players discard by matching rank or suit with the top card of the discard pile, starting with the player to the left of the dealer. If a player is unable to match the rank or suit of the top card of the discard pile and does not have an eight, he or she draws cards from the stockpile until he gets a card that he or she is able to play. When he or she draws a card that is playable, the player must play it. If the stock pile runs out of cards and the player still cannot play, the player must pass. A player can choose to draw instead of playing a card.
+
+When a player plays an eight, they declare a new suit. The following player must match this suit, or play another eight and change it.
+
+Play continues until a player runs out of cards in their hand, at which point that player wins.
+
+Scoring
+
+When a player wins, the other players tally the points of the cards in their hands:
+	8s are 50pts
+	Face cards are 10pts
+	Number cards are a number of points equal to their face value
+
+These points are awarded to the winner of the hand. The winner of the game is the first player to reach a set number of points determined by the number of players.
+	Total points = number of players * 50
+
+Objects
+	Card Game
+		Deck
+			cards
+				rank
+				suit
+			shuffle()
+			deal()
+		Players
+			name
+			points
+			seat
+			dealer?
+			hand
+		Rules
+			check_valid_move()
+			check_win_condition()
+			tally_points()
+		discard_pile
+		stock_pile

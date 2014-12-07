@@ -40,3 +40,19 @@ Objects
 			tally_points()
 		discard_pile
 		stock_pile
+
+Tests
+	cards
+		card object exists
+		card object has rank
+		card object has suit
+		suit can be Hearts, Clubs, Diamonds, Clubs'
+		suit cannot be anything else
+		rank can be 1..9, Jack, King, Queen
+		rank cannot be anything else
+	deck
+		deck object exists
+		deck object contains cards
+		deck object contains 52 cards
+		deck object contains one of each card
+		deck object only contains one of each card

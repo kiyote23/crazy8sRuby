@@ -56,3 +56,7 @@ Tests
 		deck object contains 52 cards
 		deck object contains one of each card
 		deck object only contains one of each card
+		deck can be shuffled
+		cards in a shuffled deck are not in order
+		deck can be dealt
+		dealt cards are no longer in the deck
